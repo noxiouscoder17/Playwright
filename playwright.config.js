@@ -1,8 +1,3 @@
-// @ts-check
-import { defineConfig, devices } from '@playwright/test';
-import { TIMEOUT } from 'node:dns';
-
-
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
@@ -15,9 +10,6 @@ const config = ({
   reporter: 'html',
   use: {
     browserName: 'chromium'
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
   },
-
 });
-
 module.exports = config;
